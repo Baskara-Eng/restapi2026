@@ -49,7 +49,7 @@ pipeline
 		
 		stage('Publish Allure Report'){
             steps{
-                     script{
+                
 					 allure([
 					 includeProperties:false,
 					 jdk:'',
@@ -58,7 +58,7 @@ pipeline
 					 results: [[path: '/allure-results']]
 					 
 					 ])
-            }
+         
         }
 
     }
