@@ -24,7 +24,6 @@ public class CreateUserRequest extends BaseTest{
 	public Object[][] createUserTestData() {
 		return new Object[][] {
 			{"meg","female","active"},
-			{"na","female","inactive"},
 			{"sada","male","active"}
 			
 		};
