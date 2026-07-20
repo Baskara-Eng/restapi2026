@@ -22,6 +22,7 @@ public class ReqResAPI extends BaseTest{
 		.assertThat()
 		.statusCode(200);
 		
+		System.out.println("unable to test this api as they added authorization");
 		
 	}
 
