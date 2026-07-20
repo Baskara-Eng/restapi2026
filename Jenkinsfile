@@ -44,24 +44,7 @@ pipeline
 			sh "mvn clean install "
 			
 		}
-		
-		
-		
-		stage('Publish Allure Report'){
-            steps{
-                
-					 allure([
-					 includeProperties:false,
-					 jdk:'',
-					 properties:[],
-					 reportBuildPolicy: 'ALWAYS',
-					 results: [[path: '/allure-results']]
-					 
-					 ])
-         
-        }
 
-    }
 }
 }
 }
