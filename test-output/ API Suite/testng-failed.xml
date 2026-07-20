@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ API Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="baseURI" value="https://app.reqres.in/"/>
+    <classes>
+      <class name="com.api.test.ReqResAPI">
+        <methods>
+          <include name="setup"/>
+          <include name="reqresSetup"/>
+          <include name="getReqResUsers_list_Test"/>
+        </methods>
+      </class> <!-- com.api.test.ReqResAPI -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [ API Suite] -->

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name= "API Suite" >
+
+  <test thread-count="5" name="getusers">
+	  <parameter name="baseURI" value="https://gorest.co.in/"></parameter>
+    <classes>
+      <class name="com.api.test.GetRequest"/>
+    </classes>
+  </test> 
+  
+   <test thread-count="5" name="createuser">
+	  <parameter name="baseURI" value="https://gorest.co.in/"></parameter>
+    <classes>
+      <class name="com.api.test.CreateUserRequest"/>
+    </classes>
+  </test> 
+  
+  
+  <!-- <test thread-count="5" name="Test">
+	  <parameter name="baseURI" value="https://app.reqres.in/"></parameter>
+    <classes>
+      <class name="com.api.test.ReqResAPI"/>
+    </classes>
+  </test>  Test -->
+  
+  
+</suite> <!-- Suite -->
